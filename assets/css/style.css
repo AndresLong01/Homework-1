@@ -9,7 +9,7 @@
 body {
     background-color: #d9dcd6;
     /*Changed min-width and added overflow*/
-    min-width: 1300px;
+    min-width: 1200px;
     overflow-y: scroll;
 }
 
