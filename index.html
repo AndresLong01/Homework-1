@@ -1,12 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <!--Added a reset.css file linked to the HTML-->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--Changed Title to something that is more related to the content-->
+    <title>Horiseon Inc.</title>
 </head>
+
 <body>
-    <h1>Hello, World!</h1>
+    <header>
+        <h1>Hori<span class="seo">seo</span>n</h1>
+        <!-- Changed Tag to specify it's the navigation section of the site -->
+        <nav>
+            <ul>
+                <!--Noticed ID references as links and adjusted them accordingly in relation to the location of those IDs-->
+                <li>
+                    <a href="#optimization">Search Engine Optimization</a>
+                </li>
+                <li>
+                    <a href="#management">Online Reputation Management</a>
+                </li>
+                <li>
+                    <a href="#socialMedia">Social Media Marketing</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <!--Added a title to the classed Background image-->
+        <title>People in Meeting</title>
+    </div> 
+    <!--Added alt tags on every img set in the HTML file-->
+    <!--Changed Div and class into just section-->
+    <section>
+        <!--Added an ID for Optimization, Also modified IDs to be simpler. In Addition changed all the classes to be the new, consolidated class-->
+        <div id="optimization" class="consolidatedMargin">
+            <img src="./assets/images/search-engine-optimization.jpg" alt="SEO" class="float-left" />
+            <h2>Search Engine Optimization</h2>
+            <p>
+                The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
+            </p>
+        </div>
+        <div id="management" class="consolidatedMargin">
+            <img src="./assets/images/online-reputation-management.jpg" alt="Management" class="float-right" />
+            <h2>Online Reputation Management</h2>
+            <p>
+                The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
+            </p>
+        </div>
+        <div id="socialMedia" class="consolidatedMargin">
+            <img src="./assets/images/social-media-marketing.jpg" alt="Social Media" class="float-left" />
+            <h2>Social Media Marketing</h2>
+            <p>
+                Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
+            </p>
+        </div>
+    </section>
+    <!--Changed div and class to just Aside-->
+    <aside>
+        <!--Changed classes to be consolidated Benefits class-->
+        <div class="benefitMargin">
+            <h3>Lead Generation</h3>
+            <img src="./assets/images/lead-generation.png" alt="generation"/>
+            <p>
+                Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
+            </p>
+        </div>
+        <div class="benefitMargin">
+            <h3>Brand Awareness</h3>
+            <img src="./assets/images/brand-awareness.png" alt="awareness"/>
+            <p>
+                Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
+            </p>
+        </div>
+        <div class="benefitMargin">
+            <h3>Cost Management</h3>
+            <!--Noticed the img tag was not self-closing like the rest. Changed that-->
+            <img src="./assets/images/cost-management.png" alt="cost management"/>
+            <p>
+                As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
+            </p>
+        </div>
+    </aside>
+    <div class="footer">
+        <h2>Made with ❤️️ by Horiseon</h2>
+        <p>
+            &copy; 2019 Horiseon Social Solution Services, Inc.
+        </p>
+    </div>
 </body>
+
 </html>
